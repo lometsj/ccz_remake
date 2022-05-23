@@ -9,18 +9,43 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "",
+"base": "EditorVCSInterface",
 "class": "GitAPI",
 "language": "NativeScript",
 "path": "res://addons/godot-git-plugin/git_api.gdns"
+}, {
+"base": "Node",
+"class": "arm_type",
+"language": "GDScript",
+"path": "res://script/arm_type.gd"
+}, {
+"base": "Node",
+"class": "general",
+"language": "GDScript",
+"path": "res://script/general.gd"
+}, {
+"base": "Node",
+"class": "item",
+"language": "GDScript",
+"path": "res://script/item.gd"
+}, {
+"base": "Node",
+"class": "shop",
+"language": "GDScript",
+"path": "res://script/shop.gd"
 } ]
 _global_script_class_icons={
-"GitAPI": ""
+"GitAPI": "",
+"arm_type": "",
+"general": "",
+"item": "",
+"shop": ""
 }
 
 [application]
 
 config/name="ccz_remake"
+run/main_scene="res://Node2D.tscn"
 config/icon="res://icon.png"
 
 [gdnative]
