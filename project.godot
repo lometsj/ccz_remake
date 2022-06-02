@@ -24,6 +24,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://script/general.gd"
 }, {
+"base": "Node2D",
+"class": "hero",
+"language": "GDScript",
+"path": "res://hero.gd"
+}, {
 "base": "Node",
 "class": "item",
 "language": "GDScript",
@@ -38,6 +43,7 @@ _global_script_class_icons={
 "GitAPI": "",
 "arm_type": "",
 "general": "",
+"hero": "",
 "item": "",
 "shop": ""
 }
@@ -45,12 +51,21 @@ _global_script_class_icons={
 [application]
 
 config/name="ccz_remake"
-run/main_scene="res://Node2D.tscn"
+run/main_scene="res://hero.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/resizable=false
 
 [gdnative]
 
 singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
+singletons_disabled=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
+
+[global]
+
+dis=false
 
 [physics]
 
